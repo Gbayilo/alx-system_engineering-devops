@@ -9,7 +9,7 @@
 - 07:30 AM UTC + 1: Initial detection by automated monitoring alert indicating a spike in 5xx errors and a drop in API response times.
 - 07:40 AM UTC + 1: Engineering team notified via Slack; initial investigation starts by reviewing recent deployments and server logs.
 - 08:00 AM UTC + 1: Misleading assumption that the issue was related to an external payment gateway due to error logs referencing API timeouts.
-- 08:20 AM UTC: Escalated to the DevOps team after failing to identify the cause within the application layer.
+- 08:20 AM UTC + 1: Escalated to the DevOps team after failing to identify the cause within the application layer.
 - 08:45 AM UTC + 1: DevOps team identified that one web server node was handling an abnormally high amount of traffic.
 - 09:15 AM UTC + 1: Issue traced back to the load balancer misconfiguration deployed earlier in the morning.
 - 09:30 AM UTC + 1: Corrective action taken by reverting the load balancer configuration to its previous state.
